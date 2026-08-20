@@ -1,7 +1,63 @@
 {% extends "base.html" %}
+{% load static %}
+
 {% block content %}
 
+<div class="container mt-4">
+    <div class="row">
 
-<h1> page home </h1>
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card shadow" style="width: 18rem;">
+                <img src="{% static 'images/images1.png' %}"
+                     class="card-img-top"
+                     alt="Villa de luxe">
+
+                <div class="card-body">
+                    <h5 class="card-title">Villa de Luxe</h5>
+                    <p class="card-text">
+                        Découvrez cette magnifique villa moderne avec piscine et jardin.
+                    </p>
+                    <a href="#" class="btn btn-primary">Voir le bien</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card shadow" style="width: 18rem;">
+                <img src="{% static 'images/images4.png' %}"
+                     class="card-img-top"
+                     alt="Appartement de luxe">
+
+                <div class="card-body">
+                    <h5 class="card-title">Appartement de Luxe</h5>
+                    <p class="card-text">
+                        Un appartement moderne et élégant avec une vue exceptionnelle.
+                    </p>
+                    <a href="#" class="btn btn-primary">Voir le bien</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card shadow" style="width: 18rem;">
+                <img src="{% static 'images/image3.png' %}"
+                     class="card-img-top"
+                     alt="Maison moderne">
+
+                <div class="card-body">
+                    <h5 class="card-title">Maison Moderne</h5>
+                    <p class="card-text">
+                        Une maison contemporaine avec des prestations haut de gamme.
+                    </p>
+                    <a href="#" class="btn btn-primary">Voir le bien</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
 
 {% endblock %}

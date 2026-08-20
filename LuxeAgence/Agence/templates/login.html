@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-3 mb-5">
+    <div class="row mt-5 mb-5 shadow">
+        <div class="col-lg-6 shadow p-4">
+          <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Adresse Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted">nous n'allons jamais partager votre email</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Mot de passe </label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">selectionnez</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Connectez-vous</button>
+</form>
+        </div>
+        <div class="col-lg-6">
+         <img src="{% static 'images/images8.png' %}"
+                     class="img-fluid img-reponsive"
+                     alt="Villa de luxe">
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
